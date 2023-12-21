@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="=UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Faith In The Works</title>
+  </head>
+
+
+  <!--     Header section     -->
+  <body>
+    <div class=""></div>
+
+    <div class="header">
+      <header class="header-nav">
+        <div class="logo-container">
+          <img class="logo" src="logo.PNG" alt="Faith In The Works logo">
+      </div>
+
+      <div class="logo-name">
+        <h2>Faith In The Works</h2>
+      </div>
+      <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="#">Book Reviews</a>
+        <a href="#">Motivationals</a>
+        <a href="#">Scriptures</a>
+      </nav>
+      </header>
+      </div>
+
+      <!--       Image Slider Start    -->
+      <div class="slider">
+        <div class="slides">
+      <!--       Radio button start   -->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+      <!--       Radio button close    -->
+
+      <!--       Image start           -->
+          <div class="slide first">
+            <img src="img1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img4.jpg" alt="">
+          </div>
+      <!--       Image close         -->
+
+      <!--     Automatic navigation Start   -->
+          <div class="navigation-auto">
+            <div class="auto-btn-1"></div>
+            <div class="auto-btn-2"></div>
+            <div class="auto-btn-3"></div>
+            <div class="auto-btn-4"></div>
+          </div>
+      <!--     Automatic navigation close    -->
+      </div>
+
+      <!-- Manual navigation start  -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!--     Manual navigation close   -->
+
+    </div>
+
+    <!--  Image Slider close  -->
+
+    <script>
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio'+counter).checked = true;
+        counter++;
+        if(counter>4){
+          counter = 1;
+        }
+      },5000)
+    </script>
+  </body>
+
+<!-- Footer    -->
+<footer>
+<div class="footer-container">
+<div class="contact">
+  <h2>Faith In The Works</h2>
+  <h5>faithintheworks@gmail.com</h5>
+</div>
+<div class="copyright">
+  <h5>&copy Faith In the Works 2022</h5>
+</div>
+</div>
+</footer>
+</html>

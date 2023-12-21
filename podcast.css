@@ -1,0 +1,90 @@
+/*    Universal Styles    */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: seashell;
+
+}
+
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Indie Flower', cursive;
+}
+
+/*   Header and nav bar     */
+
+.header {
+    position: fixed;
+    top:0;
+    height: 5rem;
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    z-index: 100;
+    text-align: right;
+    padding-right: 1.875rem;
+    font-size: 1.1rem;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.header-nav {
+    width: 100%;
+    position:relative;
+    top: 30%;
+    padding: 0 .0625rem;
+}
+
+.header .header-nav .logo-container {
+    position: relative;
+    float: left;
+    height: 20%;
+    max-width: 20%;
+    top: -0.625rem;
+}
+
+.header .header-nav .logo {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-name {
+    float: left;
+    padding-left: .5rem; 
+}
+
+.header .header-nav .navbar a {
+    margin-left: 1.25rem;
+    text-decoration: underline;
+
+}
+
+.intro {
+   padding-left: 5.625rem;
+   padding-top: 5.625rem;
+}
+
+/*.video{
+    
+}
+
+
+
+
+/*    Footer     */
+.footer-container {
+    padding-top: 2rem;
+    display: block;
+}
+
+.contact,
+.copyright {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
+}
